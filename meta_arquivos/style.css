@@ -1,8 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,400,300,500,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,300,600,700);
-@import "spinners.css";
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,300,500,600,700,800);
 body,
 h1,
 h2,
@@ -11,9 +8,8 @@ h4,
 h5,
 h6 {
     font-family: 'Raleway';
-    font-weight: 300
+    font-weight: 300;
 }
-
 
 
 .settings_box a,
@@ -89,6 +85,8 @@ html {
 
 * {
     outline: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -108,7 +106,7 @@ h4,
 h5,
 h6 {
     color: #2b2b2b;
-    margin: 10px 0;
+
 }
 
 h1 {
@@ -455,7 +453,9 @@ hr {
 }
 
 .m-t-10 {
-    margin-top: 5px;
+    top: 0px;
+    padding: 0px;
+    padding-top: 0px;
 }
 
 .m-t-15 {
@@ -527,7 +527,7 @@ hr {
 }
 
 .font-light {
-    font-weight: 300
+    font-weight: 500;
 }
 
 .pull-in {
@@ -771,7 +771,7 @@ position: absolute;
 }
 
 .font-18 {
-    font-size: 18px!important
+    font-size: 22px!important
 }
 
 .font-19 {
@@ -806,7 +806,9 @@ position: absolute;
 }
 
 .text-white {
-    color: #fff
+    position: relative;
+    color: #fff;
+    bottom: 0px;
 }
 
 .text-danger {
@@ -936,7 +938,7 @@ position: absolute;
     -moz-border-radius: 20px;
     border-radius: 20px;
     color: #fff;
-    font-size: 11px; 
+    font-size: 11px;
 }
 
 .label-warning {
@@ -1153,7 +1155,7 @@ pre {
 }
 ]
 .cod-grop {
-   
+
 }
 
 .table-responsive {
@@ -1724,6 +1726,7 @@ pre {
 .btn-label {
     margin: -6px 12px -6px -14px;
     padding: 5px 15px;
+
 }
 
 .btn-facebook {
@@ -2613,7 +2616,7 @@ table.dataTable thead .sorting:after {
     display: inline-block;
     padding-left: 5px;
     position: relative
-    
+
 }
 
 .checkbox label::after,
@@ -5933,7 +5936,7 @@ ul.list-icons li i {
 
 .wizard-steps>li.current span,
 .wizard-steps>li.done span {
-    border-color: #fff;
+
     color: #fff
 }
 
@@ -8835,14 +8838,6 @@ ul.list-icons li i {
     content: "\f295"
 }
 
-@font-face {
-    font-family: themify;
-    src: url(../less/icons/themify-icons/fonts/themify.eot?-fvbane);
-    src: url(../less/icons/themify-icons/fonts/themify.eot?#iefix-fvbane) format('embedded-opentype'), url(../less/icons/themify-icons/fonts/themify.woff?-fvbane) format('woff'), url(../less/icons/themify-icons/fonts/themify.ttf?-fvbane) format('truetype'), url(../less/icons/themify-icons/fonts/themify.svg?-fvbane#themify) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
-
 [class*=" ti-"],
 [class^=ti-] {
     font-family: themify;
@@ -9768,7 +9763,7 @@ ul.list-icons li i {
 }
 
 .ti-line-double:before {
-    content: "\e6e5"
+    content: "\ &#x2613;"
 }
 
 .ti-line-dotted:before {
@@ -19712,7 +19707,7 @@ hr {
     margin-top: -20px;
     z-index: 998;
     color: #708ea7;
-    
+
 }
 
 
@@ -19758,7 +19753,7 @@ hr {
 .modeloFunil h4 {
     white-space: nowrap!important;
     text-overflow: ellipsis!important;
-    
+
 }
 
 .modeloFunil h4 {
@@ -19987,16 +19982,22 @@ hr {
    color:    #c9c9c9;
 }
 
-
-
 .info-tootip{
-text-decoration: underline;
+   text-decoration: underline;
 }
 
 .Canais_Borda{
-	white-space: nowrap; position:absolute; border: solid 5px #e8eaec;
+    white-space: nowrap;
+     position:absolute;
+     border: solid 5px #e8eaec;
 }
-.ValorMeta h1{text-overflow: ellipsis!important; white-space: nowrap!important; overflow: hidden!important;letter-spacing: -2px;}
+.ValorMeta h1{
+     text-overflow: ellipsis!important;
+     white-space: nowrap!important;
+     overflow: hidden!important;
+     letter-spacing: -2px;
+    }
+
 .formNone{
 	background: transparent;
     border: none;
@@ -20018,31 +20019,38 @@ text-decoration: underline;
     color: #fff;
     font-family: Roboto;
     }
-    
-    
+
+
 .wizard-steps>li.current>.EtapasForm{
 background-color: #fcbc28;
-	
-}   
- 
+
+}
+
 .wizard-steps>li.done>.EtapasForm{
 	    background-color: #fcbc28;
-	  
+
 
 }
 
 .bootstrap-bar {
        width: 24%;
        height: 38px;
-       border: 1px solid #555;
+       padding: 10;
+       border: 2px solid #ccc;
        text-align: center;
+       border-radius: 5px;
+       font-weight: 600;
+       color: #8d9ea7;
+       font-family: Roboto;
 }
+
+
 
 
 input[type=text] {
       padding: 10px;
       font-family: Roboto;
-      color: #211502;
+ 
 }
 
 .footer {
@@ -20084,7 +20092,7 @@ input[type=text] {
   .text-white {
       color: #fff;
       margin-left: 30px;
-      margin-bottom: 5px;  
+      margin-bottom: 5px;
     }
 
  .topo {
@@ -20092,7 +20100,7 @@ input[type=text] {
      background: #333333;
  }
 
- 
+
 .icon-bar {
      height: 0;
      -webkit-transform: translateY(-50%);
@@ -20115,6 +20123,7 @@ input[type=text] {
 .instagram:hover {
    color: #5aeaf4;
 }
+
 
 .whatsapp:hover {
    color: #289622;
@@ -20141,8 +20150,12 @@ input[type=text] {
          }
 
     .text-muted {
-        text-align: center;
-        margin-left: 25px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 38px;
+        /* text-align: center; */
+        float: 20px;
+        /* float: unset; */
     }
 
     .text-white {
@@ -20156,7 +20169,7 @@ input[type=text] {
     }
 
     .bootstrap-bar {
-        width: 30%;
+        width: 60%;
         height: 38px;
         border: 1px solid #555;
         text-align: center;
@@ -20175,8 +20188,8 @@ input[type=text] {
         text-align: center;
         padding: 10px 20px 55px 20px;
      }
-    
-    
+
+
     h4.r-r-footer {
         position: relative;
         margin-left: -96px;
@@ -20186,7 +20199,7 @@ input[type=text] {
         padding: 34px;
         font-family: Raleway;
      }
-    
+
      h4.r-r-footer a {
         position: relative;
         font-size: 20px;
@@ -20196,11 +20209,11 @@ input[type=text] {
         text-align: center;
         background: #f4b12c;
      }
-    
+
      .m-t-10 {
          padding: 0px 20px 0px 20px;
        }
-    
+
        .tooltip-inner {
         border-radius: 5px;
         padding: 8px 10px;
@@ -20208,44 +20221,145 @@ input[type=text] {
         font-weight: 300;
         font-family: 'Open Sans', sans-serif;
         margin-left: -60px;
+      }
+
+     /*.wizard-buttons > a {
+          padding-right: 60px;
+      }  */
     }
-    }
-    
+
     hr {
-        width: 1px; 
-        height: 90%; 
-        background: #333333; 
+        width: 1px;
+        height: 90%;
+        background: #333333;
         left: 420px;
         top: 80px;
         position: absolute;
     }
-    
+
     .linha2 {
-        width: 1px; 
-        height: 90%; 
-        background: #333333; 
+        width: 1px;
+        height: 90%;
+        background: #333333;
         left: 945px;
         top: 80px;
         position: absolute;
     }
-    
+
     .text-camp2 {
-        float: right; 
+        float: right;
         text-align: center;
-        top: -564px; 
+        top: -564px;
         position: relative;
     }
-    
+
     .text-camp3 {
         position: relative;
         left: 500px;
     }
+
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
+
+
+ 
+ .box {
+     width: 330px;
+     height: auto;
+     float: left;   
+}
+ 
+ div#a-b-c {
+     width: 1050px;
+     height: auto;
+     margin: auto;
+     padding: 30;
+ }
+ 
+ div#a-b-c h2 {
+     font-family: Raleway;
+     text-align: left;
+     /*! display: inline; */ /* parte da tela pra não aparecer a branca */
+     font-size: 22px;
+     line-height: 35px;
+ }
+ 
+#a-b-c p {
+ text-align: left;
+ display: block;
+
+ }
+ .left {
+     margin-left: 30px;
+ }
+
+ .text-muted {
+     color: #8d9ea7;
+ }
+
+ strong {
+    font-family: Roboto;
+    font-weight: 500;
+ }
+
+
+ @media only screen and (max-width: 600px) {
+    .camp1{
+      box-sizing: border-box;
+       width: 100%;
+       position: relative;
+    }
+
+    .box {
+        width: 330px;
+        height: auto;
+        display: contents;
+        position: absolute;
+        float: right;
+   }
+
+   .left {
+     left: -30px;
+     top: 600px;
+   }
+
+   .p-b-30 {
+    padding-bottom: 680px; /* mexe com roda pé  */
+   }
+
+   #a-b-c h2 {
+       width: 20%;
+       line-height: 38px;
+       font-size: 12px;
+   }
+   
+   #text1 {
+       width: 100%;
+       height: auto;
+   }
+
+   .h4.r-r- a{
+            display: -webkit-inline-box;
+                    margin: 5px;
+                }
+
+    #valor_prolabore {
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     h4.r-r-footer a{
         position: relative;
         margin-top: 20px;
-        
+        }
+
+        #a-b-c h2 {
+            width: 20%;
+            
+        }
     }
-  
-    }
+
